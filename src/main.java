@@ -2,13 +2,13 @@ public class main {
     public static void main(String[] args) {
         int[] boo = {0, 1, 2, 3, 4};
 
-        int[] bar = new int[100];
+        int[] testVarName = new int[100];
         for (int i = 0; i < 100; i++) {
-            bar[i] = i;
+            testVarName[i] = i;
         }
 
-        System.out.println("The number of even numbers in boo is:" + countEvenNum(boo, 5));
-        System.out.println("The number of even numbers in bar is:" + countEvenNum(bar, 100));
+        System.out.println("The number of even numbers in boo is:\n" + countEvenNum(boo, 5));
+        System.out.println("The number of even numbers in testVarName is:\n" + countEvenNum(testVarName, 100));
     }
 
     private static int countEvenNum(int[] arr, int size) {
